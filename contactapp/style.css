@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --primary-color:#4263EB;
+    --text-primary: #1b1b1b;
+    --text-secondary: #6b7280;
+    --background-light: #f8f9ff;
+    --border-color: #e5e73b;
+    --base-font-size: 15px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    color: var(--text-primary);
+    line-height: 1.5;
+    background-color: #fff;
+    min-height: 100vh;
+    font: var(--base-font-size);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background: #fff;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 36px;
+    width: 36px;
+    object-fit: cover;
+}
+
+.nav-links{
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover{
+    color: var(--text-primary);
+
+}
+
+.nav-buttons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.login-btn{
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.try-btn{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500px;
+    transition: opacity 0.2s ease;
+}
+
+.try-btn:hover{
+    opacity: 0.5;
+}
